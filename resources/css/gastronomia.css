@@ -1,0 +1,10 @@
+/* Hoja de estilos especifica para gastronomia */
+main {
+    text-align: center;
+    padding: 20px;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}

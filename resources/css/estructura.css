@@ -1,0 +1,115 @@
+/* Hoja de estilos generica */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Estilos del Header */
+header {
+    width: 100vw; 
+    margin: 0; 
+    padding: 0; 
+    overflow: hidden; 
+}
+
+header img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+}
+
+/* Estilos del Nav */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0073e6;
+    padding: 10px 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #005bb5;
+}
+
+nav a.active {
+    background-color: #003f7d;
+}
+
+/* Estilos del Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+/* Estilos de tarjetas centrales */
+.highlighted-section {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: center; 
+}
+
+.highlighted-section h2 {
+    color: #0073e6;
+    margin-bottom: 15px;
+}
+
+.highlighted-section h3 {
+    color: #005bb5;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.highlighted-section p {
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px; 
+}
+
+.styled-link {
+    color: #e69200;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 2px solid #e69200;
+    transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.styled-link:hover {
+    color: #005bb5;
+    border-color: #005bb5;
+}
+
+/* Estilos del Responsive */
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .highlighted-section {
+        padding: 15px;
+        max-width: 90%; 
+    }
+
+    main {
+        padding: 10px;
+    }
+}
